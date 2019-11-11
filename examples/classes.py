@@ -28,3 +28,5 @@ assert str(type(autre_chose)) == str(type(chose))
 
 # Et ont les mêmes méthodes
 assert dir(autre_chose) == dir(chose)
+
+# Pour plus d'information: https://docs.python.org/3/library/functions.html#type

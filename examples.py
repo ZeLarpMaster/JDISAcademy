@@ -1,4 +1,3 @@
-# Special methods
 # Multiplying lists and stuff
 # Packing and unpacking args
 # builtin functions (all, any, dir, enumerate, range, reversed, zip)
