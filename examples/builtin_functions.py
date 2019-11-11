@@ -69,3 +69,6 @@ for mot, mot_anglais in zip(liste, liste_anglaise):
 # Arrête dès qu'un des itérables est terminé
 for nombre, mot in zip(range(1000000000), liste):
     print(nombre, "=", mot)  # 0 = allo 1 = bonjour 2 = coucou
+
+
+# Pour plus d'information: https://docs.python.org/3/library/functions.html

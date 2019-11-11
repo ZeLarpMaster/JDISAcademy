@@ -42,4 +42,5 @@ assert p < o
 assert p != o
 assert p and True
 
+
 # Pour plus d'information: https://docs.python.org/3/reference/datamodel.html#special-method-names
