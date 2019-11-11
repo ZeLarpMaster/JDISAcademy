@@ -2,7 +2,9 @@
 
 Le but de cet atelier est de vous montrer et expliquer certains concepts « avancés » de Python que vous ne connaissiez peut-être pas.
 
-Ce n'est pas de critiquer ou donner mon opinion sur les façons d'écrire du code en Python (autre que suivre [PEP8](https://www.python.org/dev/peps/pep-0008/) et peut-être utiliser `black`). Ce n'est pas non plus de vous montrer des librairies externes.
+Je ne peux évidemment pas tout montrer en quelques heures alors cette présentation contient seulement certaines choses que j'ai considéré pertinentes pour vous. J'espère que vous apprendrez au moins une chose.
+
+Le plus important à retenir est que la documentation de Python est très complète. Vous pouvez toujours vous y référer pour tout ce que vous cherchez.
 
 ### Contenu
 Le contenu est divisé en 2 catégories: code et explications.
