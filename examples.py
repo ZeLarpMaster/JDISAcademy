@@ -1,4 +1,3 @@
-# Threading vs Processes
 # Classes & type()
 # Special methods
 # Multiplying lists and stuff
