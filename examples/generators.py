@@ -1,4 +1,4 @@
-def my_generator():
+def mon_generateur():
     yield 1
     yield 1
     yield 2
@@ -6,48 +6,48 @@ def my_generator():
     yield 5
 
 
-def other_generator():
+def autre_generateur():
     yield 0
-    yield from my_generator()
+    yield from mon_generateur()
     yield 8
 
 
-gen = my_generator()
-print(gen)  # <generator object my_generator at ...>
+gen = mon_generateur()
+print(gen)  # <generator object mon_generateur at ...>
 assert next(gen) == 1
 assert next(gen) == 1
 for x in gen:
     print(x, end=" ")  # 2 3 5
 print()
-gen = other_generator()
+gen = autre_generateur()
 assert next(gen) == 0
-for x in gen:  # Empty the generator
+for x in gen:  # Vider le générateur
     pass
 assert x == 8
 
 
-def cool_generator(how_many):
-    print("Do important things")
-    value = yield  # Wait until first send
-    for _ in range(how_many):
+def generateur_cool(combien):
+    print("Faire des choses importantes")
+    value = yield  # Attendre le premier `send`
+    for _ in range(combien):
         print(value)
         value = yield value
-    print("Final value:", value)
-    return "The End."
+    print("Valeur finale:", value)
+    return "La Fin."
 
 
-print("Before creation")
-gen = cool_generator(3)
-print("After creation")
-next(gen)  # Initialize
-print("After initialize")
+print("Avant la création")
+gen = generateur_cool(3)
+print("Après la création")
+next(gen)  # Initialiser
+print("Après l'initialisation")
 gen.send(42)  # 42
 gen.send(10)  # 10
 gen.send("hello")  # hello
 try:
-    next(gen)  # Final value: None (parce que `next(gen) == gen.send(None)`)
+    next(gen)  # Valeur finale: None (parce que `next(gen) == gen.send(None)`)
 except StopIteration as e:
-    print(e.value)  # The End.
+    print(e.value)  # La Fin.
 
 
 # Pour plus d'information: https://docs.python.org/3.8/reference/expressions.html#yieldexpr

@@ -16,13 +16,13 @@ def indirect():
 assert direct() == indirect()
 
 
-print("Works with dictionaries!")
+print("Ça fonctionne avec des dictionnaires!")
 keys = "a", "b", "c"
 expected = {"a": ord("a"), "b": ord("b"), "c": ord("c")}
 assert expected == {k: ord(k) for k in keys}
 
 
-print("Works with sets!")
+print("Ça fonctionne avec des ensembles!")
 assert {"a", "b", "c"} == {k for k in keys}
 assert {"a", "b", "c"} == set(keys)
 

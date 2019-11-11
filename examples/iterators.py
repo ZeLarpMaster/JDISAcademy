@@ -1,4 +1,4 @@
-class MyIter:
+class MonIterateur:
     def __init__(self):
         self.x = 0
 
@@ -12,8 +12,8 @@ class MyIter:
         return self.x
 
 
-it = iter(MyIter())
-print(it)  # <__main__.MyIter object at ...>
+it = iter(MonIterateur())
+print(it)  # <__main__.MonIterateur object at ...>
 assert next(it) == 1
 assert next(it) == 2
 for x in it:
