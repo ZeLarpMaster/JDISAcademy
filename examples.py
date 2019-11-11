@@ -1,4 +1,3 @@
-# Classes & type()
 # Special methods
 # Multiplying lists and stuff
 # Packing and unpacking args
